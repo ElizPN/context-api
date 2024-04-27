@@ -15,7 +15,7 @@ const Issues: FC = () => {
       {issues.map((issue: Issue) => (
         <p key={`issue-${issue.number}`}>
           <strong>#{issue.number}</strong> {' '}
-          <a href={`${url}/${issue.number}`}>{issue.title}</a> {' '}
+          <a target="blank"href={`${url}/${issue.number}`}>{issue.title}</a> {' '}
           {issue.state}
         </p>
       ))}
