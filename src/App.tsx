@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import IssueProvider from './contexts/Issue';
+import Issues from './Issues'
 
 function App() {
   return (
-    <div className="App">
-      jijiji
-    </div>
+    <IssueProvider url="https://api.github.com/repos/ContentPI/ContentPI/issues">
+     <Issues />
+    </IssueProvider>
   );
 }
 
